@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "price": 19.99
+  },
+  {
+    "id": 2,
+    "name": "Bluetooth Headphones",
+    "description": "Noise-canceling over-ear headphones.",
+    "price": 49.99
+  },
+  {
+    "id": 3,
+    "name": "Standing Desk",
+    "description": "Adjustable height desk for better posture.",
+    "price": 249.99
+  },
+  {
+    "id": 4,
+    "name": "USB-C Charger",
+    "description": "Fast-charging USB-C wall charger with 65W output.",
+    "price": 29.95
+  },
+  {
+    "id": 5,
+    "name": "Notebook",
+    "description": "Hardcover notebook with 200 ruled pages.",
+    "price": 5.49
+  },
+  {
+    "id": 6,
+    "name": "Gaming Keyboard",
+    "description": "Mechanical keyboard with RGB lighting.",
+    "price": 89.99
+  },
+  {
+    "id": 7,
+    "name": "4K Monitor",
+    "description": "27-inch 4K UHD monitor with HDR support.",
+    "price": 329.99
+  },
+  {
+    "id": 8,
+    "name": "Webcam",
+    "description": "1080p webcam with built-in microphone.",
+    "price": 39.99
+  },
+  {
+    "id": 9,
+    "name": "Smart LED Bulb",
+    "description": "WiFi-enabled RGB smart bulb compatible with Alexa.",
+    "price": 14.99
+  },
+  {
+    "id": 10,
+    "name": "Portable SSD",
+    "description": "1TB external SSD with USB 3.2 support.",
+    "price": 109.99
+  },
+  {
+    "id": 11,
+    "name": "Wireless Earbuds",
+    "description": "Compact wireless earbuds with charging case.",
+    "price": 59.99
+  },
+  {
+    "id": 12,
+    "name": "Laptop Stand",
+    "description": "Aluminum stand for laptops up to 17 inches.",
+    "price": 34.99
+  }
+]
