@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "genre": "Sci-Fi",
+    "year": 2010,
+    "rating": 8.8,
+    "poster": "https://image.tmdb.org/t/p/w200/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg"
+  },
+  {
+    "id": 2,
+    "title": "The Dark Knight",
+    "genre": "Action",
+    "year": 2008,
+    "rating": 9.0,
+    "poster": "https://image.tmdb.org/t/p/w200/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Interstellar",
+    "genre": "Sci-Fi",
+    "year": 2014,
+    "rating": 8.6,
+    "poster": "https://image.tmdb.org/t/p/w200/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Parasite",
+    "genre": "Thriller",
+    "year": 2019,
+    "rating": 8.5,
+    "poster": "https://image.tmdb.org/t/p/w200/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Shawshank Redemption",
+    "genre": "Drama",
+    "year": 1994,
+    "rating": 9.3,
+    "poster": "https://image.tmdb.org/t/p/w200/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Pulp Fiction",
+    "genre": "Crime",
+    "year": 1994,
+    "rating": 8.9,
+    "poster": "https://image.tmdb.org/t/p/w200/dM2w364MScsjFf8pfMbaWUcWrR.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Avengers: Endgame",
+    "genre": "Superhero",
+    "year": 2019,
+    "rating": 8.4,
+    "poster": "https://image.tmdb.org/t/p/w200/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Joker",
+    "genre": "Drama",
+    "year": 2019,
+    "rating": 8.5,
+    "poster": "https://image.tmdb.org/t/p/w200/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Forrest Gump",
+    "genre": "Romance",
+    "year": 1994,
+    "rating": 8.8,
+    "poster": "https://image.tmdb.org/t/p/w200/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Matrix",
+    "genre": "Sci-Fi",
+    "year": 1999,
+    "rating": 8.7,
+    "poster": "https://image.tmdb.org/t/p/w200/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Gladiator",
+    "genre": "Action",
+    "year": 2000,
+    "rating": 8.5,
+    "poster": "https://image.tmdb.org/t/p/w200/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+  },
+  {
+    "id": 12,
+    "title": "The Godfather",
+    "genre": "Crime",
+    "year": 1972,
+    "rating": 9.2,
+    "poster": "https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  }
+]
