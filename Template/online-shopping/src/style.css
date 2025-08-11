@@ -13,118 +13,38 @@
   -moz-osx-font-smoothing: grayscale;
 
   --card-bg: #f4f4f5;
+  --highlight-color: gold;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Base styles */
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--background-color);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 #app {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-/* Light mode overrides */
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-    --card-bg: #f4f4f5;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-/* Dark mode overrides */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --card-bg: #1e1e1e;
-  }
-
-  .product-card span {
-    color: #ffffff;
-  }
-
-  .product-card p {
-    color: #ccc;
-  }
-}
-
-/* --- Product Display Flex Layout --- */
+/* Container for all movie cards */
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
 }
 
+/* Individual movie card */
 .product-card {
   background-color: var(--card-bg);
   color: inherit;
@@ -132,29 +52,117 @@ button:focus-visible {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   width: 260px;
+  height: 480px; /* 🔧 ADDED this line */
   text-align: left;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* To distribute elements */
 }
+
 
 .product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
+/* Poster image */
+.movie-poster {
+  width: 100%;
+  height: 40%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: fill;
+}
+
+/* Movie info */
 .product-card h2 {
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
   color: #646cff;
 }
 
 .product-card p {
   font-size: 0.95rem;
-  margin-bottom: 0.75rem;
-  color: #555;
+  margin: 0.25rem 0;
+  color: #444;
 }
 
 .product-card span {
+  display: inline-block;
+  margin: 0.5rem 0;
   font-weight: 600;
   font-size: 1rem;
   color: #1a1a1a;
+}
+
+/* Highlight for high-rated movies */
+.highlight-rating {
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  font-size: 0.95em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  background-color: #333;
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #646cff;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+    --card-bg: #f9f9f9;
+  }
+
+  .product-card p {
+    color: #555;
+  }
+
+  .product-card span {
+    color: #222;
+  }
+
+  button {
+    background-color: #f4f4f4;
+    color: #000;
+  }
+
+  button:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-bg: #1e1e1e;
+  }
+
+  .product-card p {
+    color: #ccc;
+  }
+
+  .product-card span {
+    color: #fff;
+  }
 }

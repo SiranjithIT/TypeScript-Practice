@@ -18,27 +18,29 @@ async function loadProducts() {
     container.className = 'product-container';
 
     products.forEach((product) => {
-      const card = document.createElement('div');
-      card.className = 'product-card';
+  const card = document.createElement('div');
+  card.className = 'product-card';
 
-      card.innerHTML = `
-        <h2>${product.name}</h2>
-        <p>${product.description}</p>
-        <span>₹ ${product.price.toFixed(2)}</span>
-        <div>
-          <button class="add-btn">Add</button>
-          <button class="remove-btn">Remove</button>
-        </div>
-      `;
+  const highlightClass = product.price >= 200 ? 'highlight-price' : '';
 
-      // Add event listener for the "Remove" button
-      const removeBtn = card.querySelector('.remove-btn');
-      removeBtn?.addEventListener('click', () => {
-        card.remove(); // removes the product card from the DOM
-      });
+  card.innerHTML = `
+    <h2>${product.name}</h2>
+    <p>${product.description}</p>
+    <span class="${highlightClass}">$${product.price.toFixed(2)}</span>
+    <div>
+      <button class="add-btn">Add</button>
+      <button class="remove-btn">Remove</button>
+    </div>
+  `;
 
-      container.appendChild(card);
-    });
+  const removeBtn = card.querySelector('.remove-btn');
+  removeBtn?.addEventListener('click', () => {
+    card.remove();
+  });
+
+  container.appendChild(card);
+});
+
 
     app.appendChild(container);
   }
