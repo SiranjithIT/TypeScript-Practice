@@ -47,14 +47,17 @@ const issues = async() => {
       card.className = 'todo-card';
       
       card.innerHTML = `
-        <div>
+      <div>
         <h3>${item.task}</h3>
-          <p>Category: ${item.category}</p>
-          <p>Priority: ${item.priority}</p>
-          <p>Due: ${item.dueDate}</p>
-          <p>Status: ${item.status}</p>
+        <p>Category: ${item.category}</p>
+        <p>Priority: ${item.priority}</p>
+        <div class="card-bottom">
+          <span class="date">${item.dueDate}</span>
+          <span class="status">${item.status}</span>
         </div>
-        `
+      </div>
+    `;
+
         container.appendChild(card);
     })
     mainContainer.appendChild(container);
