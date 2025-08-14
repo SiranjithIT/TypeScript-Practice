@@ -1,0 +1,51 @@
+body, html{
+  margin: 0;
+  height: 100%;
+  width: 98.5%;
+}
+
+#container{
+  padding: 5vh 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-card{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  height: 30vh;
+  width: 20vw;
+  border: 1px solid gainsboro;
+  padding: 1vh 3vw;
+  border-radius: 5px;
+  background: #ffffff;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(247, 241, 220, 1) 100%);
+  overflow:hidden;
+}
+
+.todo-card:hover{
+  transform: translate(2px, -4px);
+  cursor: pointer;
+}
+
+.todo-card h2{
+  text-align: center;
+  height: 20%;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  height: auto;
+  width: auto;
+  background: #cfa4db;
+  background: linear-gradient(90deg, rgba(207, 164, 219, 0.8) 0%, rgba(160, 83, 237, 1) 100%);
+  color: rgb(255, 241, 241);
+}
+
+.card-end{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

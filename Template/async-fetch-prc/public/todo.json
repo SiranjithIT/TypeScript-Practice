@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "task": "Finish TypeScript project",
+    "category": "Work",
+    "priority": "High",
+    "dueDate": "2025-08-15",
+    "status": "Ongoing"
+  },
+  {
+    "id": 2,
+    "task": "Grocery shopping",
+    "category": "Personal",
+    "priority": "Medium",
+    "dueDate": "2025-08-11",
+    "status": "New"
+  },
+  {
+    "id": 3,
+    "task": "Call the plumber",
+    "category": "Home",
+    "priority": "High",
+    "dueDate": "2025-08-12",
+    "status": "New"
+  },
+  {
+    "id": 4,
+    "task": "Read a new book",
+    "category": "Leisure",
+    "priority": "Low",
+    "dueDate": "2025-08-30",
+    "status": "Ongoing"
+  },
+  {
+    "id": 5,
+    "task": "Prepare presentation slides",
+    "category": "Work",
+    "priority": "High",
+    "dueDate": "2025-08-13",
+    "status": "Ongoing"
+  },
+  {
+    "id": 6,
+    "task": "Workout session",
+    "category": "Fitness",
+    "priority": "Medium",
+    "dueDate": "2025-08-11",
+    "status": "Done"
+  },
+  {
+    "id": 7,
+    "task": "Clean the garage",
+    "category": "Home",
+    "priority": "Low",
+    "dueDate": "2025-08-20",
+    "status": "New"
+  },
+  {
+    "id": 8,
+    "task": "Pay electricity bill",
+    "category": "Finance",
+    "priority": "High",
+    "dueDate": "2025-08-10",
+    "status": "Done"
+  },
+  {
+    "id": 9,
+    "task": "Organize photo album",
+    "category": "Personal",
+    "priority": "Low",
+    "dueDate": "2025-08-25",
+    "status": "Ongoing"
+  },
+  {
+    "id": 10,
+    "task": "Attend coding meetup",
+    "category": "Learning",
+    "priority": "Medium",
+    "dueDate": "2025-08-18",
+    "status": "New"
+  },
+  {
+    "id": 11,
+    "task": "Bake a cake",
+    "category": "Hobby",
+    "priority": "Low",
+    "dueDate": "2025-08-14",
+    "status": "New"
+  },
+  {
+    "id": 12,
+    "task": "Fix broken chair",
+    "category": "Home",
+    "priority": "Medium",
+    "dueDate": "2025-08-22",
+    "status": "Ongoing"
+  }
+]
