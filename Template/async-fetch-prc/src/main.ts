@@ -42,6 +42,10 @@ const addToScreen = (todoList: TodoList[] | null):void => {
           <p class="${statusClassName}">${item.status} </p>
         </div>
       `
+      card.addEventListener('click', ()=>{
+        localStorage.setItem('todo-item', JSON.stringify(item));
+        window.location.href = 'details.html';
+      })
       container?.appendChild(card);
     })
   }else{
@@ -109,6 +113,7 @@ filter?.addEventListener('change', ()=>{
       addToScreen(filteredList);
     })
   }else{
+    addSelection(['--None--'])
     addToScreen(todoList);
   }
 })

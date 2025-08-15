@@ -7,21 +7,19 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <label for="pet-select">Filter</label>
-    <!-- <select name="priority" id="priority-select">
-      <option value="all">All</option>
-      <option value="High">High</option>
-      <option value="Medium">Medium</option>
-      <option value="Low">Low</option>
-    </select> -->
-    <select name="filter" id="filter-select">
-      <option value="all">All</option>
-      <option value="status">Status</option>
-      <option value="priority">Priority</option>
-    </select>
-    <select name="" id="filter-content">
-      
-    </select>
+    <header>
+      <div class="filter">
+        <label>Filter</label>
+        <select name="filter" id="filter-select">
+          <option value="all">All</option>
+          <option value="status">Status</option>
+          <option value="priority">Priority</option>
+        </select>
+        <select name="" id="filter-content">
+          <option value="None">--None--</option>
+        </select>
+      </div>
+    </header>
     <div id="container"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>

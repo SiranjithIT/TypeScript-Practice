@@ -4,13 +4,44 @@ body, html{
   width: 100%;background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 35%, rgba(227, 227, 227, 1) 100%);
 }
 
+header{
+  width: 95%;
+  margin: 2vh 3vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  background-color: gainsboro;
+  border-radius: 3px;
+}
+
+header .filter{
+  margin-left: 1vw;
+  width: 30%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+header .filter label{
+  font-size: large;
+  font-weight: bold;
+}
+
+header .filter select{
+  height: 60%;
+  width: 25%;
+  border-radius: 4px;
+  text-align: center;
+}
+
 #container{
   padding: 5vh 3vw;
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 5vw;
 }
 
 .todo-card{
@@ -18,13 +49,13 @@ body, html{
   flex-direction: column;
   gap: 3px;
   height: 30vh;
-  width: 20vw;
+  width: 19vw;
   border: 1px solid gainsboro;
   padding: 1vh 3vw;
   border-radius: 5px;
   background: #ffffff;
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(247, 241, 220, 1) 100%);
-  overflow:hidden;
+  overflow: auto;
 }
 
 .todo-card:hover{
