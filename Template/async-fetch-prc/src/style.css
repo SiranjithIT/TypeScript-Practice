@@ -1,7 +1,7 @@
 body, html{
   margin: 0;
   height: 100%;
-  width: 98.5%;
+  width: 100%;
 }
 
 #container{
@@ -11,6 +11,8 @@ body, html{
   gap: 2vw;
   align-items: center;
   justify-content: center;
+  background: #ffffff;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 35%, rgba(227, 227, 227, 1) 100%);
 }
 
 .todo-card{
@@ -48,4 +50,36 @@ body, html{
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.high-priority{
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.status-completed{
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.status-ongoing{
+  background-color: orange;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.status-new{
+  background-color: yellow;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.other-priority{
+  background-color: rgb(96, 96, 165);
+  padding: 2px;
+  color: white;
 }
