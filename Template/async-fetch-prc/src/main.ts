@@ -12,7 +12,8 @@ interface TodoList {
 let todoList: TodoList[]|null = null; 
 
 const container = document.querySelector<HTMLDivElement>('#container');
-const priorityFilter = document.querySelector<HTMLSelectElement>('#priority-select');
+const filter = document.querySelector<HTMLSelectElement>('#filter-select');
+const filterContent = document.querySelector<HTMLSelectElement>('#filter-content');
 
 const addToScreen = (todoList: TodoList[] | null):void => {
   container?.replaceChildren();
@@ -58,7 +59,7 @@ const fetchItems = async():Promise<void> =>{
   addToScreen(todoList)
 }
 
-const filterList = (todoList: TodoList[]|null, priority: string):TodoList[] => {
+const filterPriority = (todoList: TodoList[]|null, priority: string):TodoList[] => {
   if(todoList != null){
     let filteredList: TodoList[] = todoList.filter(
       (todo) =>  todo.priority === priority
@@ -69,9 +70,46 @@ const filterList = (todoList: TodoList[]|null, priority: string):TodoList[] => {
   else return [];
 }
 
-priorityFilter?.addEventListener('change', ()=>{
-  const filteredList: TodoList[] = filterList(todoList, priorityFilter.value);
-  addToScreen(filteredList);
+const filterStatus = (todoList: TodoList[]|null, status: string):TodoList[] => {
+  if(todoList != null){
+    let filteredList: TodoList[] = todoList.filter(
+      (todo) =>  todo.status === status
+    );
+    console.log(filteredList);
+    return filteredList;
+  }
+  else return [];
+}
+
+
+filter?.addEventListener('change', ()=>{
+  filterContent?.replaceChildren();
+  if(filter.value === 'status'){
+    const statusList: string[] = ['New', 'Ongoing', 'Done'];
+    statusList.forEach((status)=>{
+      const option = document.createElement("option") as HTMLOptionElement;
+      option.value = status;
+      option.innerHTML = `${status}`;
+      filterContent?.appendChild(option);
+      filterContent?.addEventListener('change', ()=>{
+        const filteredList: TodoList[] = filterStatus(todoList, filterContent.value);
+        addToScreen(filteredList);
+      })
+    }) 
+  }else if(filter.value === 'priority'){
+    const priorityList: string[] = ['High', 'Medium', 'Low'];
+    priorityList.forEach((priority)=>{
+      const option = document.createElement("option") as HTMLOptionElement;
+      option.value = priority;
+      option.innerHTML = `${priority}`;
+      filterContent?.appendChild(option);
+    })
+    filterContent?.addEventListener('change', ()=>{
+      const filteredList: TodoList[] = filterPriority(todoList, filterContent.value);
+      addToScreen(filteredList);
+    })
+  }
 })
+
 
 fetchItems();
