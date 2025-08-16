@@ -1,0 +1,31 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  margin-top: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container div{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gainsboro;
+  width: 40%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.edit-task{
+  display:none;
+}
