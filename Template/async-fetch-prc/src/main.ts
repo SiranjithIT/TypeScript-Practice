@@ -114,8 +114,8 @@ filter?.addEventListener('change', ()=>{
     })
   }else{
     addSelection(['--None--'])
-    addToScreen(todoList);
   }
+  addToScreen(todoList);
 })
 
 
