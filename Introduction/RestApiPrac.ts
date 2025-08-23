@@ -18,10 +18,9 @@ const getProducts = ():Promise<Product[]> => {
     method: 'GET',
     headers: headers
   })
-
   const products:Promise<Product[]> = fetch(request)
-                        .then(res=>res.json())
-                        .then(res=>{return res as Product[]})
+                                    .then(res=>res.json())
+                                    .then(res=>{return res as Product[]})
   return products
 }
 

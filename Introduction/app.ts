@@ -87,7 +87,6 @@ const processFeedback1 = (input: unknown) =>{
 
 processFeedback1(1);
 processFeedback1("Hello, World")
-processFeedback1(new Blob())
 processFeedback1([1, 2, 3])
 
 //? => if it is undefined it continues else it gives the value of the specified attribute. Checking and moving forward.
